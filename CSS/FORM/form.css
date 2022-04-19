@@ -1,0 +1,24 @@
+#Xform{
+    font-size: 30px;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+.radio{
+    height: 21px;
+    width: 21px;
+}
+#podisX{
+    font-size: 25px;
+    position: absolute;
+    top: 70%;
+    color: whitesmoke;
+}
+#R_CHECKBOX{
+    position: absolute;
+    top: 57%;
+    left: 48%;
+    transform:scale(2.9);
+    cursor:pointer
+}
+

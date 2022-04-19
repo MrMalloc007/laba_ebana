@@ -1,0 +1,38 @@
+#table{
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px #7ab4b2;
+}
+.th{
+    color: whitesmoke;
+}
+#X_TABLE{
+    width: 16.6666%;
+    position: absolute;
+    left: 0.6%;
+}
+#Y_TABLE{
+    width: 16.6666%;
+    position: absolute;
+    left: 16.66666%;
+}
+#R_TABLE{
+    width: 16.6666%;
+    position: absolute;
+    left: 33.3333%;
+}
+#CR_TABLE{
+    width: 16.6666%;
+    position: absolute;
+    left: 49.99999%;
+}
+#SCR_TABLE{
+    width: 16.6666%;
+    position: absolute;
+    left: 66.6666667%;
+}
+#RES_TABLE{
+    width: 16.6666%;
+    position: absolute;
+    left: 82.33333333%;
+}
+

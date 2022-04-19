@@ -1,0 +1,21 @@
+#send{
+    position: absolute;
+    top: 80%;
+    left: 27%;
+
+}
+#res{
+    position: absolute;
+    top: 80%;
+    left: 67%;
+}
+#submit{
+    font-size: 200%;
+    color: #23d5ab;
+    border-radius: 5%;
+}
+#reset{
+    font-size: 200% ;
+    color: #23d5ab;
+    border-radius: 5%;
+}

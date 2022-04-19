@@ -1,0 +1,44 @@
+#X2{
+    position: relative;
+    left: 15.9% ;
+
+}
+#X1\.5{
+    position: relative;
+    left: 13%;
+}
+#X1{
+    position: relative;
+    left: 9.7%;
+}
+#X0\.5{
+    position: relative;
+    left: 6.63%;
+}
+#X0{
+    position: relative;
+    left: 3.6%;
+}
+#X-0\.5{
+    position: relative;
+    left: 0.68%;
+}
+#X-1{
+    position: relative;
+    left: 0.5%;
+}
+#X-1\.5{
+    position: relative;
+    left: 0.3%;
+}
+#X-2{
+    position: relative;
+    left: 0.5%;
+}
+#Xcor{
+    font-size: 180%;
+    position: absolute;
+    top: -18%;
+    left: -34%;
+    color: whitesmoke;
+}

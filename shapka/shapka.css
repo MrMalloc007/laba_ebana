@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(-45deg, #448794, #51ad5f, #57bdb9, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text{
+    font-size: 70px;
+     color: whitesmoke;
+    position: relative;
+    left: 16%;
+}
+#text1{
+    position: relative;
+    left: 37%;
+}
+#text2{
+    position: relative;
+    left: 36%;
+}
+#text3{
+    position: relative;
+    left: 43%;
+}
+#img{
+    position: absolute;
+    top: 81%;
+    opacity: 0.8;
+    width: 150px;
+    height: 150px;
+
+}

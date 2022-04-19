@@ -1,0 +1,21 @@
+#Yform{
+    position: absolute;
+    top: 30%;
+    left: 26.5%;
+}
+#Y_TEXT{
+    /*width: 50%;*/
+    /*height: 50%;*/
+    font-size: 183%;
+}
+#Y_podpis{
+    font-size: 30.3px;
+    color: whitesmoke;
+}
+#Ycor{
+    font-size: 330%;
+    position: absolute;
+    left: -37%;
+    top: 0%;
+    color: whitesmoke;
+}

@@ -1,0 +1,16 @@
+#info_text{
+    font-size: 200%;
+    position: relative;
+    left: 37%;
+    top: -18%;
+    color: whitesmoke;
+}
+#exep{
+    height: 75%;
+    width: 90%;
+    border-radius: 5%;
+    background: whitesmoke;
+    position: relative;
+    top: -35%;
+    left: 5%;
+}

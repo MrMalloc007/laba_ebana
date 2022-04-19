@@ -1,0 +1,34 @@
+#Rcor{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    font-size: 330%;
+    color: whitesmoke;
+}
+#podpisR{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-size: 180%;
+    color: whitesmoke;
+}
+#R1{
+    position: relative;
+    left: 12.3%;
+}
+#R1\.5{
+    position: relative;
+    left: 37%;
+}
+#R2{
+    position: relative;
+    left: 63%;
+}
+#R2\.5{
+    position: relative;
+    left: 90%;
+}
+#R3{
+    position: relative;
+    left: 115%;
+}
