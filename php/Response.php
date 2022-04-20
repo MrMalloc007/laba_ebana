@@ -1,11 +1,18 @@
 <?php
     class Response{
-        protected $X;
-        protected $Y;
-        protected $R;
-        protected $currentTime;
-        protected $executionTime;
-        protected $RES;
+
+        public $X;
+        public $Y;
+        public $R;
+        public $currentTime;
+        public $executionTime;
+        public $RES;
+
+
+//        public function __toString($X,$Y,$R,$currentTime,$executionTime,$RES) {
+//            return $this->X;
+//
+//        }
 
 
         public function __construct($X, $Y, $R, $currentTime, $executionTime, $RES)

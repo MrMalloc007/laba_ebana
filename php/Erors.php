@@ -1,8 +1,8 @@
 <?php
     class Erors{
-        protected $exep_messege_for_X;
-        protected $exep_messege_for_Y;
-        protected $exep_messege_for_R;
+        public $exep_messege_for_X;
+        public $exep_messege_for_Y;
+        public $exep_messege_for_R;
 
         public function __construct($exep_messege_for_X,$exep_messege_for_Y,$exep_messege_for_R){
             $this->exep_messege_for_X = $exep_messege_for_X;
