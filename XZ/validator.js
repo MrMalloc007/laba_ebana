@@ -1,5 +1,9 @@
+function isValidNum(num) {
+    return !isNaN(parseFloat(num)) && isFinite(num);
+}
+
 function validateX (x,arrX){
-    if (!arrX.includes(x)){
+    if (!arrX.includes(parseFloat(x))){
         return  "Выберите число из списка !";
     }else if (x === ""){
         return  "Выберите X";
@@ -10,7 +14,7 @@ function validateX (x,arrX){
 
 
 function validateY(y){
-    if (!Number.isNaN(y)){
+    if (!isValidNum(y)){
         return  "Y должен являться числом";
     }else if (y < -5 || y > 5){
         return  "Введите Y из диапазона";
@@ -21,7 +25,7 @@ function validateY(y){
 
 
 function validateR(r,arrR){
-    if (!arrR.includes(r)){
+    if (!arrR.includes(parseFloat(r))){
         return  "Выберите число из списка !";
     }else if (r === ""){
         return  "Выберите R";

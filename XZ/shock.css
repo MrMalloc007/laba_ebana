@@ -1,34 +1,22 @@
-/*.tdjs{*/
-/*    font-size: 150%;*/
-/*    color: #23d5ab;*/
-/*}*/
-/*#tdjsX{*/
-/*    width: 16.6666%;*/
-/*    position: relative;*/
-/*    left: 11%;*/
-/*}*/
-/*#tdjsY{*/
-/*    width: 16.6666%;*/
-/*    position: relative;*/
-/*    left: 15%;*/
-/*}*/
-/*#tdjsR{*/
-/*    width: 16.6666%;*/
-/*    position: relative;*/
-/*    left: 20.2%;*/
-/*}*/
-/*#tdjsCT{*/
-/*    width: 16.6666%;*/
-/*    position: relative;*/
-/*    left: 22%;*/
-/*}*/
-/*#tdjsET{*/
-/*    width: 16.6666%;*/
-/*    position: relative;*/
-/*    left: 27%;*/
-/*}*/
-/*#tdjsRS{*/
-/*    width: 16.6666%;*/
-/*    position: relative;*/
-/*    left: 29%;*/
-/*}*/
+.tdjs{
+    font-size: 150%;
+    color: #23d5ab;
+}
+#tdjsX{
+    width: 216px;
+}
+#tdjsY{
+    width: 216px;
+}
+#tdjsR{
+    width: 216px;
+}
+#tdjsCT{
+    width: 216px;
+}
+#tdjsET{
+    width: 216px;
+}
+#tdjsRS{
+    width: 216px;
+}
