@@ -21,7 +21,7 @@ function validateY(y){
 
 
 function validateR(r,arrR){
-    if (!r.includes(arrR)){
+    if (!arrR.includes(r)){
         return  "Выберите число из списка !";
     }else if (r === ""){
         return  "Выберите R";

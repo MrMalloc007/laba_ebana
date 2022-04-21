@@ -1,5 +1,3 @@
-$.getScript('untitled/XZ/validator.js');
-
 let x = document.getElementsByClassName("radio");
 let y = document.getElementById("Y_TEXT");
 let r = document.getElementsByClassName("checkbox");
@@ -14,16 +12,15 @@ let r_exp = "";
 let main_exep = "";
 
 
-
-x_exp = validateX(x,arrX);
-y_exp = validateY(y);
-r_exp = validateR(r,arrR);
-
-main_exep = EXEP(x_exp,y_exp,r_exp);
-
-
 $("#mainform").submit(function (e){     // чекнуть     e - создаем событие
     e.preventDefault();                 // отменяем стандартное событие браузера
+
+    x_exp = validateX(x,arrX);
+    y_exp = validateY(y);
+    r_exp = validateR(r,arrR);
+
+    main_exep = EXEP(x_exp,y_exp,r_exp);
+
     if (main_exep !== 1){
         $('#exepX').append(x_exp);
         $('#exepY').append(y_exp);
