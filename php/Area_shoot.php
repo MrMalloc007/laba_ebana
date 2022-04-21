@@ -15,6 +15,7 @@
             }
         }
 
+
         function shoot($Area,$X,$Y,$R){
             switch ($Area){
                 case 1: if (sqrt(pow($X,2) + pow($Y,2)) <= $R){
@@ -34,7 +35,7 @@
                     return "Рикошет !";
                 }
                 case 5: if ($X > $R || $X < -$R/2 || $Y > $R || $Y < $R){
-                    return "Эм...Можно и поточнее стрелять...";
+                    return "Рикошет !";
                 }else{
                     return "Есть пробитие !";
                 }

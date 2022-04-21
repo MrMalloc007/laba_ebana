@@ -15,8 +15,6 @@ $("#mainform").submit(function (e){     // чекнуть     e - создаем
     let r;
 
     let schet = 0;
-    schetchik(schet);
-
 
 
     x = checkedX();
@@ -34,40 +32,50 @@ $("#mainform").submit(function (e){     // чекнуть     e - создаем
         $('#exepY').append(y_exp);
         $('#exepR').append(r_exp);
     }else{
-
-            let form = $(this);
-            $.ajax({
-                url: "php/actionn.php",
-                method: "POST",
-                dataType: "json",
-                data: form.serialize() + '&time=' + new Date().getTimezoneOffset(),
-                success: function (data) {
-                    if ('X' in data) {
-                        newRow = '<tr>';
-                        newRow1 = '<tr><td id="tdjsX" class="tdjs">' + data.X + '</td>';
-                        newRow2 = '<tr><td id="tdjsY" class="tdjs">' + data.Y + '</td>';
-                        newRow3 = '<tr><td id="tdjsR" class="tdjs">' + data.R + '</td>';
-                        newRow4 = '<tr><td id="tdjsCT" class="tdjs">' + data.currentTime + '</td>';
-                        newRow5 = '<tr><td id="tdjsET" class="tdjs">' + data.executionTime + '</td>';
-                        newRow6 = '<tr><td id="tdjsRS" class="tdjs">' + data.RES + '</td>';
-
-                        $('.table').append(newRow);
-
-                        $('#X_TABLE').append(newRow1);
-                        $('#Y_TABLE').append(newRow2);
-                        $('#R_TABLE').append(newRow3);
-                        $('#CR_TABLE').append(newRow4);
-                        $('#SCR_TABLE').append(newRow5);
-                        $('#RES_TABLE').append(newRow6);
-                    } else {
-                        erorX = data.exep_messege_for_X;
-                        erorY = data.exep_messege_for_Y;
-                        erorR = data.exep_messege_for_R;
-                        $("#exepX").append(erorX);
-                        $("#exepY").append(erorY);
-                        $("#exepR").append(erorR);
-                    }
+        if (schetchic(schet) > 1) {
+            for (i = 0; i < document.getElementsByClassName("checkbox").length; i++ ){
+                if (document.getElementsByClassName("checkbox")[i].checked){
+                    sendRequest($(this), x, y, document.getElementsByClassName("checkbox")[i].value);
                 }
-            })
+            }
+        } else {
+            sendRequest($(this), x, y, r);
         }
-})
+    }
+});
+
+function sendRequest(form, xxx, yyy, rrr) {
+    $.ajax({
+        url: "php/actionn.php",
+        method: "POST",
+        dataType: "json",
+        data: 'CORX=' + xxx + '&CORY=' + yyy + '&CORR=' + rrr + '&time=' + new Date().getTimezoneOffset(),
+        success: function (data) {
+            if ('X' in data) {
+                newRow = '<tr>';
+                newRow1 = '<tr><td id="tdjsX" class="tdjs">' + data.X + '</td>';
+                newRow2 = '<tr><td id="tdjsY" class="tdjs">' + data.Y + '</td>';
+                newRow3 = '<tr><td id="tdjsR" class="tdjs">' + data.R + '</td>';
+                newRow4 = '<tr><td id="tdjsCT" class="tdjs">' + data.currentTime + '</td>';
+                newRow5 = '<tr><td id="tdjsET" class="tdjs">' + data.executionTime + '</td>';
+                newRow6 = '<tr><td id="tdjsRS" class="tdjs">' + data.RES + '</td>';
+
+                $('.table').append(newRow);
+
+                $('#X_TABLE').append(newRow1);
+                $('#Y_TABLE').append(newRow2);
+                $('#R_TABLE').append(newRow3);
+                $('#CR_TABLE').append(newRow4);
+                $('#SCR_TABLE').append(newRow5);
+                $('#RES_TABLE').append(newRow6);
+            } else {
+                erorX = data.exep_messege_for_X;
+                erorY = data.exep_messege_for_Y;
+                erorR = data.exep_messege_for_R;
+                $("#exepX").append(erorX);
+                $("#exepY").append(erorY);
+                $("#exepR").append(erorR);
+            }
+        }
+    })
+}

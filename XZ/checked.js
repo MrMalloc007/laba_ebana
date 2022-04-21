@@ -1,10 +1,11 @@
-function schetchik(schet){
-    for (i = 0; i < document.getElementsByClassName("radio").length; i ++ ){
-        if (document.getElementsByClassName("radio")[i].checked){
-            schet ++;
+function schetchic(){
+    z = 0;
+    for (i = 0; i < document.getElementsByClassName("checkbox").length; i ++ ){
+        if (document.getElementsByClassName("checkbox")[i].checked){
+            z++;
         }
     }
-    return schet;
+    return z;
 }
 
 function checkedX (){
@@ -15,6 +16,7 @@ function checkedX (){
     }
     return x;
 }
+
 function checkedR(){
     for (i = 0; i < document.getElementsByClassName("checkbox").length; i ++ ){
         if (document.getElementsByClassName("checkbox")[i].checked){
